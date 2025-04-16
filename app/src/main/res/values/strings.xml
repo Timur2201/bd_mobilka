@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Юридическое приложение</string>
+    <string-array name="service_types">
+        <item>Консультация</item>
+        <item>Составление договора</item>
+        <item>Представительство в суде</item>
+        <item>Другие услуги</item>
+        <item>новая услуга</item>
+    </string-array>
+</resources>
+
+
+
+

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Заголовок с логотипом -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/logo_vesi"
+                android:contentDescription="Логотип"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Мои запросы"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Информация о запросах -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Здесь вы можете просмотреть ваши активные и завершённые запросы."
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Список запросов (пример с заглушкой) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="@color/colorGrayLight"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Запрос №1: Консультация по недвижимости"
+                android:textSize="16sp"
+                android:textColor="@color/colorTextPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дата: 12 марта 2025"
+                android:textSize="14sp"
+                android:textColor="@color/colorGrayDark" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="@color/colorGrayLight"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Запрос №2: Составление договора"
+                android:textSize="16sp"
+                android:textColor="@color/colorTextPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дата: 10 марта 2025"
+                android:textSize="14sp"
+                android:textColor="@color/colorGrayDark" />
+        </LinearLayout>
+
+        <!-- Кнопка для возврата -->
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Вернуться назад"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

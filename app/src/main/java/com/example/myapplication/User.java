@@ -11,7 +11,6 @@ public class User {
     private String address;
 
 
-
     // Конструктор без параметров (может потребоваться для некоторых библиотек)
     public User() {
     }
